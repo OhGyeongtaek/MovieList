@@ -5,7 +5,7 @@ import './MoviesList.css';
 class MoviesList extends Component {
 	render(){
 		return this.props.movies.map((data, idx) => {
-			return <MoviesCol key={data.id} movie={data} />
+			return <MoviesCol key={'MoviesCol'+((this.props.page-1)*12 + idx)} movie={data} />
 		});
 	}
 }
