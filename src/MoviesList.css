@@ -1,6 +1,60 @@
 .wrap-movie-data{
 	width : 30%;
+	background:#fff;
+	margin:2em 1em;
+	padding:1em;
+	display:inline-block;
+	border:1px solid #ccc;
+	box-shadow: 0.15em 0.15em 0.2em #ccc;
 }
+
 .wrap-movie-data img{
-	width:20%;
+	width:30%;
+	margin-top:-2em;
+	border:1px solid #ccc;
+	box-shadow: 0.15em 0.15em 0.2em #ccc;
+}
+
+.wrap-movie-data ul{
+	width:70%;
+	float:right;
+	padding:0;
+	padding-left:2em;
+}
+
+/* 설명이랑 제목 ...처리*/
+.wrap-movie-data .discript,
+.wrap-movie-data .title{
+	overflow : hidden;
+	text-overflow : ellipsis;
+}
+.wrap-movie-data .discript{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block; /* Fallback for non-webkit */
+	display: -webkit-box;
+	-webkit-line-clamp: 3; 
+	-webkit-box-orient: vertical;
+	line-height: 1.2em;
+	height: 3.6em;
+}
+.wrap-movie-data .title{
+	font-size:2.0em;
+	white-space:nowrap;
+}
+.wrap-movie-data .rating{
+	padding:0.5em 0;
+}
+
+
+@media (max-width:1400px){
+	.wrap-movie-data{
+		width : 45%;
+	}
+}
+
+@media (max-width:670px){
+	.wrap-movie-data{
+		width : 93%;
+	}
 }
