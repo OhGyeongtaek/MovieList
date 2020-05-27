@@ -1,5 +1,5 @@
 # MovieList
-  * Open Api를 통해 React를 이용한 영화 목록 가지져오는 사이트
+  * Open Api를 통해 Reactjs를 사용하여 Infinite Scroll Code를 통해 영화 목록 가지져오는 사이트
   * Open Api 주소 : https://yts.lt/api/v2/list_movies.json?limit=
   
 ## Software
