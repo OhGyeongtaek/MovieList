@@ -1,6 +1,6 @@
 # MovieList
-  Open Api를 통해 React를 이용한 영화 목록 가지져오는 홈페이지.
-  [Open Api](https://yts.lt/api/v2/list_movies.json?limit=)
+  * Open Api를 통해 React를 이용한 영화 목록 가지져오는 홈페이지.
+  * Open Api 주소 : https://yts.lt/api/v2/list_movies.json?limit=
   
 ## Software
   * Ubuntu 14.04 LTS
