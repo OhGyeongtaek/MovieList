@@ -1,18 +1,25 @@
-코딩할때 참고사이트.
-https://codesandbox.io/?from-app=1
+# MovieList
+  Open Api를 통해 React를 이용한 영화 목록 가지져오는 홈페이지.
+  [Open Api](https://yts.lt/api/v2/list_movies.json?limit=)
+  
+## Software
+  * Ubuntu 14.04 LTS
+  * Node 8.12.0
+  * npm 6.4.1
+  * expo-cli 2.2.0
+  * React 16.8.6
 
+## Display 1920px 
+<img src="https://user-images.githubusercontent.com/20200820/82984989-294be180-a02e-11ea-800f-e2b70f26aac7.PNG" />
 
-git 저장소 URL 변경하는 명령어
-git remote set-url origin [URL]
+## Display 600px 
+<img src="https://user-images.githubusercontent.com/20200820/82984941-0f120380-a02e-11ea-9494-ae5d848ff5ce.PNG" />
 
-파일이 수정되어 git에 올라갈 파일을 확인
-git status 
-
-수정된 파일을 git buffer에 저장하여 push할때 올림
-git add .
-
-커밋을 할때의 메세지 설정
-git commit -m "메세지"
-
-커밋
-git push origin +master
+## Infinite Scroll Code
+```javascript
+	_onScroll = (e) => {
+		if((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
+			this._getMovieData();
+		}
+	}
+```
