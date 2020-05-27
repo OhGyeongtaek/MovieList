@@ -17,9 +17,9 @@
 
 ## Infinite Scroll Code
 ```javascript
-	_onScroll = (e) => {
-		if((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
-			this._getMovieData();
-		}
+_onScroll = (e) => {
+	if((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
+		this._getMovieData();
 	}
+}
 ```
